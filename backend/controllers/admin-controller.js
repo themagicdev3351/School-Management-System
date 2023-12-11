@@ -66,11 +66,9 @@ const adminRegister = async (req, res) => {
 
         if (existingAdminByEmail) {
             res.send({ message: 'Email already exists' });
-        }
-        else if (existingSchool) {
+        } else if (existingSchool) {
             res.send({ message: 'School name already exists' });
-        }
-        else {
+        } else {
             let result = await admin.save();
             result.password = undefined;
             res.send(result);
