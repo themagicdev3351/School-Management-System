@@ -84,7 +84,7 @@ const LoginPage = ({ role }) => {
         }
         else if (role === "Student") {
             const rollNum = "1"
-            const studentName = "Dipesh Awasthi"
+            const studentName = "Bhautik Patel"
             const fields = { rollNum, studentName, password }
             setGuestLoader(true)
             dispatch(loginUser(fields, role))

@@ -32,8 +32,7 @@ const ChooseUser = ({ visitor }) => {
         const fields = { email, password }
         setLoader(true)
         dispatch(loginUser(fields, user))
-      }
-      else {
+      } else {
         navigate('/Adminlogin');
       }
     }
@@ -41,7 +40,7 @@ const ChooseUser = ({ visitor }) => {
     else if (user === "Student") {
       if (visitor === "guest") {
         const rollNum = "1"
-        const studentName = "Dipesh Awasthi"
+        const studentName = "Bhautik Patel"
         const fields = { rollNum, studentName, password }
         setLoader(true)
         dispatch(loginUser(fields, user))
